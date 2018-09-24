@@ -1,0 +1,243 @@
+@charset "utf-8";
+/*左边图片120*120 右边文字*/
+.goods-item {
+    padding: 12px;
+    height: 144px;
+    background-color: #fff;
+    margin-bottom: 10px;
+}
+
+.goods-item-img {
+    min-width: 120px;
+    max-width: 120px;
+}
+
+.goods-item > b {
+    display: block;
+    width: 16px;
+    height: 16px;
+    background: url(../icons/sel_c0.png) no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 64px;
+    left: 8px;
+}
+
+.goods-item > b.active {
+    background: url(../icons/sel_c1.png) no-repeat;
+    background-size: cover;
+}
+
+.goods-item-img i {
+    display: block;
+    width: 120px;
+    height: 120px;
+    background-size: cover;
+    background-position: center;
+}
+
+.goods-item-txt {
+    height: 120px;
+    padding-left: 12px;
+}
+
+.goods-item-txt h4 {
+    line-height: 18px;
+    max-height: 54px;
+    color: #333;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+}
+
+.goods-item-count {
+    height: 20px;
+    width: 70px;
+    border: 1px solid #efefef;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.goods-item-count > a {
+    width: 20px;
+    line-height: 18px;
+    text-align: center;
+    background-color: #efefef;
+}
+
+.goods-item-count > input {
+    width: 28px;
+    height: 18px;
+    padding: 3px;
+    font-size: 12px;
+    outline: none;
+    border: none;
+    text-align: center;
+}
+
+.goods-num {
+    position: absolute;
+    bottom: 27px;
+    right: 0;
+    font-size: 13px;
+}
+
+.goods-item-price {
+    position: absolute;
+    left: 12px;
+    bottom: 25px;
+}
+
+.new-price {
+    color: #D51419;
+}
+
+.old-price {
+    color: #ccc;
+    text-decoration: line-through;
+    font-size: 13px;
+}
+
+.new-price span {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+/* common line */
+.com-line {
+    margin: 25px 12px;
+    height: 1px;
+    background-color: #bcbcbc;
+    position: relative;
+}
+
+.com-line b {
+    display: block;
+    width: 100px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    font-size: 15px;
+    color: #676767;
+    background-color: #efefef;
+    letter-spacing: 3px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+/* classify */
+.goods-item-s {
+    width: 25%;
+    min-height: 50px;
+    padding: 0 10px;
+}
+
+.goods-item-s > div {
+    padding-top: 12px;
+    height: 50px;
+}
+
+.goods-item-s > div i {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.goods-item-s p {
+    margin-top: 12px;
+    text-align: center;
+    font-size: 12px;
+}
+
+/*option tab 筛选*/
+.goods-option{
+    margin-bottom: 1px;
+}
+
+.goods-option div {/*宽度根据个数可设置*/
+    font-weight: 500;
+    background-color: #fff;
+    text-align: center;
+    line-height: 40px;
+}
+
+.goods-option div b {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    vertical-align: -2px;
+    margin-left: 4px;
+    border: 5px solid transparent;
+    border-top-color: #767676;
+}
+
+.goods-option div.active b {
+    border-top-color: transparent;
+    border-bottom-color: #D51419;
+    vertical-align: 3px;
+}
+
+.goods-option div.active {
+    color: #D51419;
+}
+
+/*search 搜索框*/
+.search-box {
+    padding: 5px 20px;
+}
+
+.search-box > div {
+    position: relative;
+}
+
+.search-box input {
+    border-radius: 4px;
+    border: 1px solid #e5e5e5;
+}
+
+.search-box div > b {
+    display: block;
+    width: 20px;
+    height: 20px;
+    background: url("../images/public/search.png") no-repeat;
+    background-size: contain;
+    position: absolute;
+    top: 7px;
+    right: 10px;
+}
+
+/* 首页-最新产品 */
+.img-con {
+    background-color: #fff;
+    padding: 6px;
+}
+
+.img-con > div {
+    padding: 6px;
+    width: 50%;
+}
+
+.new-goods-txt {
+    padding: 6px;
+}
+
+.new-goods-txt > div {
+    margin-top: 6px;
+}
+
+.new-goods-txt > div span:first-child {
+    margin-right: 4px;
+}
+
+.new-goods-item {
+    border: 1px solid #e5e5e5;
+}

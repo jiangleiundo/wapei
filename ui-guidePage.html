@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html ng-app="app">
+	<head>
+		<meta charset="UTF-8">
+    	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+		<title></title>
+		<link rel="stylesheet" href="assets/css/ui.base.css" />
+		<link rel="stylesheet" href="assets/css/ui.swiper.css" />
+		<link rel="stylesheet" href="assets/css/ui-guidePage.css" />
+	</head>
+	<body ng-controller="ctrl">
+		<!--<div class="container">-->
+			<div class="swiper-container guide">
+			  	<div class="swiper-wrapper">
+			    	<div class="swiper-slide" style="background-image: url(assets/images/login/loading.jpg);"></div>
+			    	<div class="swiper-slide" style="background-image: url(assets/images/login/loading.jpg);"></div>
+			    	<div class="swiper-slide" style="background-image: url(assets/images/login/loading.jpg);">
+			    		<div class="use-now" ng-click="useNow()">立即体验</div>
+			    	</div>
+			  	</div>
+			</div>
+		<!--</div>-->
+	</body>
+	
+	
+	<!--libs-->
+	<script src="libs/zepto.min.js"></script>
+	<script src="libs/angular.min.js"></script>
+	<script src="libs/fastclick.js"></script>
+	<script src="libs/swiper.min.js"></script>
+	<script src="mnBirdge/mnwebmain.js"></script>
+	
+	<!--common-->
+	<script src="config/mn.config.js"></script>
+	<script src="config/mn.commonArr.js"></script>
+	<script src="common/mn.utility.js"></script>
+	<script src="common/mn.loading.js"></script>
+	<script src="http/mn.http.js"></script>
+	<script src="controller/app.js"></script>
+	
+	<!--controller-->
+	<script src="controller/guidePage.Controller.js"></script>
+	
+</html>

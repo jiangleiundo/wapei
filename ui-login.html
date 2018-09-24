@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="format-detection" content="email=no">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="assets/css/ui.base.css">
+    <link rel="stylesheet" href="assets/css/ui.swiper.css">
+    <link rel="stylesheet" href="assets/css/ui.login.css">
+</head>
+<body ng-controller="ctrl">
+    <div class="close"></div>
+    <div class="logo"><img src="assets/images/login/logo.png"/></div>
+
+    <div class="" id="login">
+        
+        <div class="ub tab">
+        	<div class="ub-f1 tab-item active" ng-click="tabItemClick(0)">普通账号登录</div>
+        	<div class="ub-f1"></div>
+        	<div class="ub-f1 tab-item" ng-click="tabItemClick(1)">手机账号登录</div>
+        </div>
+        
+
+        <!--登录-->
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <!--普通账号登录-->
+                <div class="swiper-slide">
+                    <div class="login-item"><input type="text" placeholder="请输入账号" ng-model="dataModel.accountLogin.accountName"></div>
+                    <div class="login-item"><input type="password" placeholder="请输入密码" ng-model="dataModel.accountLogin.accountPwd"></div>
+                    <div class="login-item login-btn" >
+                    	<a class="active ripple" ng-click="login(1,dataModel.accountLogin.accountName,dataModel.accountLogin.accountPwd)">登录</a>
+                    </div>
+                    <div class="login-item-info fix">
+                        <div class="f" ng-click="toForget()">忘记密码？</div>
+                        <div class="r">没有账号？点击<span class="red-color" ng-click="toRegister()">注册</span></div>
+                    </div>
+
+                    <div class="login-other">第三方登录</div>
+                    <div class="login-line"><b></b></div>
+                    <div class="login-thi">
+                        <div class="login-thi-icon fix">
+                            <div class="f wx"></div>
+                            <div class="r qq" ng-click="qqLogin()"></div>
+                        </div>
+                    </div>
+                </div>
+                <!--手机账号登录-->
+                <div class="swiper-slide">
+                    <div class="login-item"><input type="text" placeholder="请输入手机号" ng-model="dataModel.mobileLogin.loginMobilePhone"></div>
+                    <div class="login-item login-code">
+                        <a ng-click="getCode(dataModel.mobileLogin.loginMobilePhone,2)">获取验证码</a>
+                        <input type="text" placeholder="请输入验证码" ng-model="dataModel.mobileLogin.loginMobileCode">
+                    </div>
+                    <div class="login-item login-btn" >
+                    	<a class="active ripple" ng-click="login(5,dataModel.mobileLogin.loginMobilePhone,dataModel.mobileLogin.loginMobileCode)">登录</a>
+                    </div>
+                    <div class="login-item-info fix">
+                        <div class="r">没有账号？点击<span class="red-color" ng-click="toRegister()">注册</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+	<!--注册-->
+    <div class="hidden" id="register">
+        <div class="login-item"><input type="text" placeholder="请输入手机号" ng-model="dataModel.accountRegister.registerMobilePhone"></div>
+        <div class="login-item login-code">
+            <a ng-click="getCode(dataModel.accountRegister.registerMobilePhone,1)">获取验证码</a>
+            <input type="number" placeholder="请输入验证码" ng-model="dataModel.accountRegister.registerMobileCode">
+        </div>
+        <div class="login-item">
+        	<input type="password" placeholder="6-20位数字或字母组合" ng-model="dataModel.accountRegister.registerPwd">
+        </div>
+        <div class="login-item">
+        	<input type="password" placeholder="确认登录密码" ng-model="dataModel.accountRegister.confirmPwd">
+        </div>
+        <div class="login-item login-btn"><a class="active ripple" ng-click="register()">注册</a></div>
+        <div class="login-item-info fix">
+            <div class="r">已有账号？点击<span class="red-color" ng-click="toLogin()">登录</span></div>
+        </div>
+    </div>
+    
+    <!--忘记密码-->
+    <div class="hidden" id="forgetPwd">
+        <div class="login-item"><input type="text" placeholder="请输入手机号" ng-model="dataModel.forgetPwd.forgetMobilePhone"></div>
+        <div class="login-item login-code">
+            <a ng-click="getCode(dataModel.forgetPwd.forgetMobilePhone,2)">获取验证码</a>
+            <input type="number" placeholder="请输入验证码" ng-model="dataModel.forgetPwd.forgetMobileCode">
+        </div>
+        <div class="login-item">
+        	<input type="password" placeholder="6-20位数字或字母组合" ng-model="dataModel.forgetPwd.forgetPwd">
+        </div>
+        <div class="login-item">
+        	<input type="password" placeholder="确认登录密码" ng-model="dataModel.forgetPwd.confirmPwd">
+        </div>
+        <div class="login-item login-btn"><a class="active ripple" ng-click="forgetSubmit()">确认</a></div>
+        <div class="login-item-info fix">
+            <div class="r">去<span class="red-color" ng-click="toLogin()">登录</span></div>
+        </div>
+    </div>
+    
+</body>
+
+<!--libs-->
+<script src="libs/zepto.min.js"></script>
+<script src="libs/angular.min.js"></script>
+<script src="libs/fastclick.js"></script>
+<script src="libs/swiper.min.js"></script>
+<script src="mnBirdge/mnwebmain.js"></script>
+
+<!--common-->
+<script src="config/mn.config.js"></script>
+<script src="config/mn.commonArr.js"></script>
+<script src="common/mn.utility.js"></script>
+<script src="common/mn.loading.js"></script>
+<script src="http/mn.http.js"></script>
+<script src="controller/app.js"></script>
+
+<script src="controller/login.Controller.js"></script>
+</html>

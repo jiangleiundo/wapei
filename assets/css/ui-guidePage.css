@@ -1,0 +1,32 @@
+@charset "utf-8";
+
+/*
+ * ==================================
+ *  引导页
+ * ==================================
+ */
+
+.guide{
+	width: 100%;
+	height: 100%;
+}
+
+.swiper-slide{
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: top;
+}
+
+.use-now{
+	width: 90px;
+	height: 36px;
+	text-align: center;
+	line-height: 36px;
+	position: absolute;
+	left: 50%;
+	margin-left: -45px;
+	background-color: rgba(0,0,0,0.4);
+	bottom: 80px;
+	color: #FFFFFF;
+	border-radius: 8px;
+}

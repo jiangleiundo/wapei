@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html ng-app="app">
+	<head>
+	    <meta charset="UTF-8">
+	    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	    <meta name="format-detection" content="email=no">
+	    <meta name="format-detection" content="telephone=no">
+	    <link rel="stylesheet" href="assets/css/ui.base.css">
+	    <link rel="stylesheet" href="assets/css/ui.empty.css" />
+	    <link rel="stylesheet" href="assets/css/ui.common.css">
+	    <link rel="stylesheet" href="assets/css/ui.shoppingCart.css">
+	</head>
+	<body ng-controller="ctrl">
+	
+		<div class="container1">
+			
+		
+			<ul class="goods-shopping-cart">
+			    <li class="ub goods-item" ng-click="toGoodsDetail()">
+			        <b class="active"></b>
+			        <div class="ub-f1 goods-item-img"><i style="background-image: url(assets/images/public/goods01.jpg)"></i></div>
+			        <div class="ub-f1 goods-item-txt">
+			            <h4>川崎Z1000摩托车 10-16年 DWV车身 防摔跤 发动机保护球</h4>
+			
+			            <div class="goods-item-price">
+			                <div class="new-price"><em class="red-rmb">¥</em><span>739.00</span></div>
+			            </div>
+			
+			            <div class="goods-num">×<span>{{shoppingModel.item}}</span></div>
+			
+			            <div class="goods-item-count fix">
+			                <a class="f" ng-click="minus($event)">-</a>
+			                <input class="f" type="text" maxlength="3" readonly ng-model="shoppingModel.item">
+			                <a class="r" ng-click="plus($event)">+</a>
+			            </div>
+			        </div>
+			    </li>
+			    <li class="ub goods-item">
+			        <b class=""></b>
+			        <div class="ub-f1 goods-item-img"><i style="background-image: url(assets/images/public/goods01.jpg)"></i></div>
+			        <div class="ub-f1 goods-item-txt">
+			            <h4>川崎Z1000摩托车 10-16年 DWV车身 防摔跤 发动机保护球</h4>
+			
+			            <div class="goods-item-price">
+			                <div class="new-price"><em class="red-rmb">¥</em><span>739.00</span></div>
+			            </div>
+			
+			            <div class="goods-num">×<span>1</span></div>
+			
+			            <div class="goods-item-count fix">
+			                <a class="f">-</a>
+			                <input class="f" type="text" maxlength="3" value="1" readonly>
+			                <a class="r">+</a>
+			            </div>
+			        </div>
+			    </li>
+			    <li class="ub goods-item">
+			        <b class=""></b>
+			        <div class="ub-f1 goods-item-img"><i style="background-image: url(assets/images/public/goods01.jpg)"></i></div>
+			        <div class="ub-f1 goods-item-txt">
+			            <h4>川崎Z1000摩托车 10-16年 DWV车身 防摔跤 发动机保护球</h4>
+			
+			            <div class="goods-item-price">
+			                <div class="new-price"><em class="red-rmb">¥</em><span>739.00</span></div>
+			            </div>
+			
+			            <div class="goods-num">×<span>1</span></div>
+			
+			            <div class="goods-item-count fix">
+			                <a class="f">-</a>
+			                <input class="f" type="text" maxlength="3" value="1" readonly>
+			                <a class="r">+</a>
+			            </div>
+			        </div>
+			    </li>
+			    <li class="ub goods-item">
+			        <b class=""></b>
+			        <div class="ub-f1 goods-item-img"><i style="background-image: url(assets/images/public/goods01.jpg)"></i></div>
+			        <div class="ub-f1 goods-item-txt">
+			            <h4>川崎Z1000摩托车 10-16年 DWV车身 防摔跤 发动机保护球</h4>
+			
+			            <div class="goods-item-price">
+			                <div class="new-price"><em class="red-rmb">¥</em><span>739.00</span></div>
+			            </div>
+			
+			            <div class="goods-num">×<span>1</span></div>
+			
+			            <div class="goods-item-count fix">
+			                <a class="f">-</a>
+			                <input class="f" type="text" maxlength="3" value="1" readonly>
+			                <a class="r">+</a>
+			            </div>
+			        </div>
+			    </li>
+			</ul>
+		
+			<div class="shop-btm-bar fix">
+			    <div class="f sel-all"><b></b>全选</div>
+			    <div class="r price-all" ng-click="openUrlInApp()">结算(<span>0</span>)</div>
+			    <div class="r goods-total">合计：<span class="red-color">0</span><em>(不含运费)</em></div>
+			</div>
+			
+			<div ng-include="'include/ui-public-empty.html'"></div>
+			
+		</div>
+	
+	</body>
+	
+	<!--libs-->
+	<script src="libs/zepto.min.js"></script>
+	<script src="libs/angular.min.js"></script>
+	<script src="libs/fastclick.js"></script>
+	<script src="mnBirdge/mnwebmain.js"></script>
+	
+	<!--common-->
+	<script src="config/mn.config.js"></script>
+	<script src="config/mn.commonArr.js"></script>
+	<script src="common/mn.utility.js"></script>
+	<script src="common/mn.loading.js"></script>
+	<script src="http/mn.http.js"></script>
+	<script src="controller/app.js"></script>
+	
+	<script src="controller/shoppingCart.Controller.js"></script>
+</html>

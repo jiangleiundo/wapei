@@ -1,0 +1,20 @@
+@charset "utf-8";
+
+.classify {
+    background-color: #fff;
+}
+
+.classify h3 {
+    line-height: 50px;
+    text-align: center;
+}
+
+.classify-box {
+    padding: 0 12px 12px 12px;
+}
+
+.goods-item-s div img {
+    display: block;
+    width: 30px;
+    margin: 10px auto 0;
+}

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html ng-app="app">
+	<head>
+		<meta charset="UTF-8">
+	 	<meta charset="UTF-8">
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<meta name="format-detection" content="email=no">
+		<meta name="format-detection" content="telephone=no">
+		<link rel="stylesheet" href="assets/css/ui.base.css" />
+		<link rel="stylesheet" href="assets/css/ui-loading.css" />
+		<title>loading</title>
+	</head>
+	<!---->
+	<body ng-controller="ctrl">
+		<span class="load-time" ng-click="stopWait()">跳过 <span ng-bind="secTime"></span></span>
+	</body>
+	
+	<!--libs-->
+	<script src="libs/zepto.min.js"></script>
+	<script src="libs/angular.min.js"></script>
+	<script src="libs/fastclick.js"></script>
+	<script src="libs/swiper.min.js"></script>
+	<script src="mnBirdge/mnwebmain.js"></script>
+	
+	<!--common-->
+	<script src="config/mn.config.js"></script>
+	<script src="config/mn.commonArr.js"></script>
+	<script src="common/mn.utility.js"></script>
+	<script src="common/mn.loading.js"></script>
+	<script src="http/mn.http.js"></script>
+	<script src="controller/app.js"></script>
+	
+	<script src="controller/loading.Controller.js"></script>
+</html>

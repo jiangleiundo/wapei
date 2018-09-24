@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html ng-app="app">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<meta name="format-detection" content="email=no">
+		<meta name="format-detection" content="telephone=no">
+		<link rel="stylesheet" href="assets/css/ui.base.css">
+	    <link rel="stylesheet" href="assets/css/ui.mine.css">
+	    <title>我的页面</title>
+	</head>
+	<body ng-controller="ctrl">
+		<div class="my-head">
+			<div class="my-head-pic"><i style="background-image: url(assets/images/public/default_head.png);"></i></div>
+			<div class="my-head-info">
+				<h3>挖掘机技术哪家强</h3>
+				<div class="my-jifen"><b class="pic"></b>积分：<span>123</span></div>
+			</div>
+			
+			<div class="head-tab ub">
+				<div class="ub-f1">
+					<div class="head-item b-r-1">
+						<img src="assets/icons/my_send.png">
+						<div>待付款</div>
+					</div>
+				</div>
+				<div class="ub-f1">
+					<div class="head-item b-r-1">
+						<img src="assets/icons/my_pay.png">
+						<div>代发货</div>
+					</div>
+				</div>
+				<div class="ub-f1">
+					<div class="head-item">
+						<img src="assets/icons/my_done.png">
+						<div>已完成</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="my-item ub my-order">
+			<div class="ub-f1 my-item-lt"><img src="assets/icons/order.png">我的订单</div>
+			<div class="ub-f1 my-item-rt"><img src="assets/icons/right.png"></div>
+		</div>
+		
+		<div class="my-item ub">
+			<div class="ub-f1 my-item-lt"><img src="assets/icons/star.png">我的收藏</div>
+			<div class="ub-f1 my-item-rt"><img src="assets/icons/right.png"></div>
+		</div>
+		<div class="my-item ub">
+			<div class="ub-f1 my-item-lt"><img src="assets/icons/time.png">浏览记录</div>
+			<div class="ub-f1 my-item-rt"><img src="assets/icons/right.png"></div>
+		</div>
+		<div class="my-item ub">
+			<div class="ub-f1 my-item-lt"><img src="assets/icons/jifen.png">我的积分</div>
+			<div class="ub-f1 my-item-rt"><img src="assets/icons/right.png"></div>
+		</div>
+		<div class="my-item ub">
+			<div class="ub-f1 my-item-lt"><img src="assets/icons/address.png">我的收获地址</div>
+			<div class="ub-f1 my-item-rt"><img src="assets/icons/right.png"></div>
+		</div>
+		<div class="my-item ub">
+			<div class="ub-f1 my-item-lt"><img src="assets/icons/tel.png">拨打客服电话</div>
+			<div class="ub-f1 my-item-rt"><img src="assets/icons/right.png"></div>
+		</div>
+		<div class="my-item ub">
+			<div class="ub-f1 my-item-lt"><img src="assets/icons/good.png">推荐好友</div>
+			<div class="ub-f1 my-item-rt"><img src="assets/icons/right.png"></div>
+		</div>
+		
+	</body>
+	
+	<!--libs-->
+	<script src="libs/zepto.min.js"></script>
+	<script src="libs/angular.min.js"></script>
+	<script src="libs/fastclick.js"></script>
+	<script src="mnBirdge/mnwebmain.js"></script>
+	
+	<!--common-->
+	<script src="config/mn.config.js"></script>
+	<script src="config/mn.commonArr.js"></script>
+	<script src="common/mn.utility.js"></script>
+	<script src="common/mn.loading.js"></script>
+	<script src="http/mn.http.js"></script>
+	<script src="controller/app.js"></script>
+	
+	<script src="controller/mine.Controller.js"></script>
+</html>

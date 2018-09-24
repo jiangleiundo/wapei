@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="format-detection" content="email=no">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="assets/css/ui.base.css" />
+    <link rel="stylesheet" href="assets/css/ui.common.css" />
+    <link rel="stylesheet" href="assets/css/ui.classify.css" />
+    <title>分类</title>
+</head>
+<body ng-controller="ctrl">
+    <div class="search-box">
+        <div>
+            <b></b>
+            <input type="text" class="form-ctrl" placeholder="请输入产品名称、品牌、机型">
+        </div>
+    </div>
+
+    <div class="classify m-g-b-20">
+        <h3>机型品牌</h3>
+        <div class="classify-box fix">
+            <div class="goods-item-s f" ng-repeat="item in classifyModel.tags" on-Finish-Render-Filters>
+                <div><i style="background-image: url({{item.tag_icon}})"></i></div>
+                <p>{{item.tag_name}}</p>
+            </div>
+
+            <div class="goods-item-s f" ng-click="seeMore()">
+                <div class="goods-more"><img src="assets/icons/more.png"></div>
+                <p>更多</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="classify">
+        <h3>配件品牌</h3>
+        <div class="classify-box fix">
+            <div class="goods-item-s f" ng-repeat="item in classifyModel.brands" on-Finish-Render-Filters>
+                <div><i style="background-image: url({{item.brand_icon}})"></i></div>
+                <p>{{item.brand_name}}</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+<!--libs-->
+<script src="libs/zepto.min.js"></script>
+<script src="libs/angular.min.js"></script>
+<script src="libs/fastclick.js"></script>
+<script src="mnBirdge/mnwebmain.js"></script>
+
+<!--common-->
+<script src="config/mn.config.js"></script>
+<script src="config/mn.commonArr.js"></script>
+<script src="common/mn.utility.js"></script>
+<script src="common/mn.loading.js"></script>
+<script src="http/mn.http.js"></script>
+<script src="controller/app.js"></script>
+
+<script src="controller/classify.controller.js"></script>
+</html>

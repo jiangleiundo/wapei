@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="email=no">
+    <link rel="stylesheet" href="assets/css/ui.base.css"/>
+    <link rel="stylesheet" href="assets/css/ui.common.css"/>
+    <link rel="stylesheet" href="assets/css/ui.mine.css"/>
+    <link rel="stylesheet" href="assets/css/ui.swiper.css"/>
+</head>
+<body ng-controller="ctrl">
+
+    <div class="tab ub m-g-b-6">
+        <div class="ub-f1 tab-item" ng-class="item.isActive" ng-repeat="item in mimeOrderTabArr" ng-bind="item.name" ng-click="tabItemClick($index)"></div>
+        <p class="tab-line"></p>
+    </div>
+	
+	<div class="swiper-container">
+        <div class="swiper-wrapper">
+            <!--1 全部-->
+            <div class="swiper-slide">
+                <div style="min-height: 300px;">111111111</div>
+            </div>
+            <!--2 待付款-->
+            <div class="swiper-slide">
+                <div class="my-order-head red-color">等待付款</div>
+                <ul>
+                    <li class="ub goods-item">
+                        <div class="ub-f1 goods-item-img"><i style="background-image: url(assets/images/public/goods01.jpg)"></i></div>
+                        <div class="ub-f1 goods-item-txt">
+                            <h4>川崎Z1000摩托车 10-16年 DWV车身 防摔跤 发动机保护球</h4>
+
+                            <div class="goods-item-price">
+                                <div class="new-price"><em class="red-rmb">¥</em><span>739.00</span></div>
+                                <div class="old-price">¥ <span>790</span></div>
+                            </div>
+
+                            <div class="goods-num">×<span>1</span></div>
+
+                        </div>
+                    </li>
+                    <li class="ub goods-item">
+                        <div class="ub-f1 goods-item-img"><i style="background-image: url(assets/images/public/goods01.jpg)"></i></div>
+                        <div class="ub-f1 goods-item-txt">
+                            <h4>川崎Z1000摩托车 10-16年 DWV车身 防摔跤 发动机保护球</h4>
+
+                            <div class="goods-item-price">
+                                <div class="new-price"><em class="red-rmb">¥</em><span>739.00</span></div>
+                                <div class="old-price">¥ <span>790</span></div>
+                            </div>
+
+                            <div class="goods-num">×<span>1</span></div>
+
+                        </div>
+                    </li>
+                </ul>
+
+                <div class="my-order-item">积分抵用-<span>2</span>元</div>
+                <div class="my-order-item">运费¥ <span>10.00</span>元</div>
+                <div class="my-order-item">共计<span>2</span>件商品 &nbsp;&nbsp;小计(配送含运费)： <em class="red-color">¥ </em><span class="red-color">1982</span>元</div>
+
+                <div class="my-order-btn-box fix">
+                    <div class="r"><a class="my-order-btn active">付款</a></div>
+                    <div class="r"><a class="my-order-btn">取消订单</a></div>
+                    <div class="r"><a class="my-order-btn">联系卖家</a></div>
+                </div>
+            </div>
+            <!--3 待收货-->
+            <div class="swiper-slide">
+                <ul class="my-order-wait-list">
+                    <li>
+                        <div class="my-order-head red-color">等待收货</div>
+                        <div class="ub goods-item">
+                            <div class="ub-f1 goods-item-img"><i style="background-image: url(assets/images/public/goods01.jpg)"></i></div>
+                            <div class="ub-f1 goods-item-txt">
+                                <h4>川崎Z1000摩托车 10-16年 DWV车身 防摔跤 发动机保护球</h4>
+
+                                <div class="goods-item-price">
+                                    <div class="new-price"><em class="red-rmb">¥</em><span>739.00</span></div>
+                                    <div class="old-price">¥ <span>790</span></div>
+                                </div>
+                                <div class="goods-num">×<span>1</span></div>
+                            </div>
+                        </div>
+
+                        <div class="my-order-item">积分抵用-<span>2</span>元</div>
+                        <div class="my-order-item">运费¥ <span>10.00</span>元</div>
+                        <div class="my-order-item">共计<span>1</span>件商品 &nbsp;&nbsp;小计(配送含运费)： <em class="red-color">¥ </em><span class="red-color">739.00</span>元</div>
+
+                        <div class="my-order-btn-item fix">
+                            <div class="r"><a class="my-order-btn active">收货</a></div>
+                            <div class="r"><a class="my-order-btn">查看物流</a></div>
+                            <div class="r"><a class="my-order-btn">联系卖家</a></div>
+                        </div>
+                    </li>
+
+                </ul>
+                <div style="height: 30px; background-color: #fff;"></div>
+
+            </div>
+            <!--4 待评价-->
+            <div class="swiper-slide">
+                <div style="min-height: 300px;">444444444</div>
+            </div>
+        </div>
+    </div>
+
+</body>
+<!--libs-->
+<script src="libs/zepto.min.js"></script>
+<script src="libs/angular.min.js"></script>
+<script src="libs/fastclick.js"></script>
+<script src="libs/swiper.min.js"></script>
+<script src="mnBirdge/mnwebmain.js"></script>
+
+<!--common-->
+<script src="config/mn.config.js"></script>
+<script src="config/mn.commonArr.js"></script>
+<script src="common/mn.loading.js"></script>
+<script src="common/mn.utility.js"></script>
+<script src="http/mn.http.js"></script>
+<script src="controller/app.js"></script>
+
+<script src="controller/mine.Order.Controller.js"></script>
+</html>

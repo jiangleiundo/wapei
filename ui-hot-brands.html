@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="email=no">
+    <link rel="stylesheet" href="assets/css/ui.base.css" />
+    <link rel="stylesheet" href="assets/css/ui.common.css" />
+    <link rel="stylesheet" href="assets/css/ui.classify.detail.css">
+    <title>热门品牌</title>
+</head>
+<body ng-controller="ctrl">
+    <div class="cd-head"><b></b>热门品牌</div>
+    <div class="cd-hot-brand fix">
+        <div class="goods-item-s f">
+            <div><i style="background-image: url(assets/images/test/brandCopy.png)"></i></div>
+            <p>三一</p>
+        </div>
+        <div class="goods-item-s f">
+            <div><i style="background-image: url(assets/images/test/brandCopy.png)"></i></div>
+            <p>三一</p>
+        </div>
+        <div class="goods-item-s f">
+            <div><i style="background-image: url(assets/images/test/brandCopy.png)"></i></div>
+            <p>三一</p>
+        </div>
+        <div class="goods-item-s f">
+            <div><i style="background-image: url(assets/images/test/brandCopy.png)"></i></div>
+            <p>三一</p>
+        </div>
+        <div class="goods-item-s f">
+            <div><i style="background-image: url(assets/images/test/brandCopy.png)"></i></div>
+            <p>三一</p>
+        </div>
+    </div>
+
+    <div class="cd-item"><b></b></div>
+    <div class="com-box">不限品牌</div>
+
+    <div class="repeat-">
+        <div class="cd-item">A</div>
+        <ul class="cd-item-box">
+            <li><i style="background-image: url(assets/images/test/brand_copy.png)"></i><span>小鸟科技</span></li>
+            <li><i style="background-image: url(assets/images/test/brand_copy.png)"></i><span>小鸟科技</span></li>
+            <li><i style="background-image: url(assets/images/test/brand_copy.png)"></i><span>小鸟科技</span></li>
+        </ul>
+    </div>
+</body>
+<!--libs-->
+<script src="libs/zepto.min.js"></script>
+<script src="libs/angular.min.js"></script>
+<script src="libs/fastclick.js"></script>
+<script src="mnBirdge/mnwebmain.js"></script>
+
+<!--common-->
+<script src="config/mn.config.js"></script>
+<script src="config/mn.commonArr.js"></script>
+<script src="common/mn.utility.js"></script>
+<script src="common/mn.loading.js"></script>
+<script src="http/mn.http.js"></script>
+<script src="controller/app.js"></script>
+
+<script src="controller/classify.hotBrands.Controller.js"></script>
+</html>

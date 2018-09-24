@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html ng-app="app">
+	<head>
+		<meta charset="UTF-8">
+    	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+		<title>商品详情</title>
+		<link rel="stylesheet" href="assets/css/ui.base.css" />
+		<link rel="stylesheet" href="assets/css/ui.swiper.css" />
+		<link rel="stylesheet" href="assets/css/ui.goods.detail.css" />
+	</head>
+	<body ng-controller="ctrl">
+		<!--<div class="container">-->
+			
+			<!--banner-->
+			<div class="banner">
+				<div class="swiper-container">
+		            <div class="swiper-wrapper">
+		                <div class="swiper-slide">
+		                	<img src="assets/images/public/banner01.jpg">
+		                </div>
+		                 <div class="swiper-slide">
+		                	<img src="assets/images/public/banner01.jpg">
+		                </div>
+		                 <div class="swiper-slide">
+		                	<img src="assets/images/public/banner01.jpg">
+		                </div>
+		            </div>
+		            <div class="swiper-pagination"></div>
+		        </div>
+			</div>
+	        
+	        <!--价格、名称-->
+	        <div class="info">
+	        	<div class="info-price">
+	        		<div class="f price-new">¥ <span>1890.00</span></div>
+	        		<div class="f price-old">¥<span>2000.00</span></div>
+	        	</div>
+	        	<div class="info-name">王亚东是SB啊吴文明是SB王亚东是SB</div>
+	        	<div class="info-number ub">
+	        		<div class="read-num">已有<span>75</span>人浏览</div>
+	        		<div class="sell-num">已售<span>800</span>件</div>
+	        	</div>
+	        </div>
+	        
+	        <!--商品评价-->
+	        <div class="evaluate list-con">
+	        	<div class="evaluate-top">
+		        	<div class="evaluate-title">商品评价 <span>(9999)</span></div>
+		        	<div class="evaluate-label">
+		        		<span class="active">全部</span>
+		        		<span>好评(99)</span>
+		        		<span>中评(99)</span>
+		        		<span class="bad-evaluate">差评(99)</span>
+		        		<span>有图(999)</span>
+		        	</div>
+	        	</div>
+	        	
+	        	<div class="evaluate-list-item list-con">
+	        		<div class="item-top ub">
+	        			<div class="item-top-icon ub-f1"></div>
+	        			<div class="item-top-name ub-f1">张三</div>
+	        			<div class="item-top-time ub-f1">2016-09-09</div>
+	        		</div>
+	        		
+	        		<div class="item-star ub">
+	        			<i class="ub-f1 star-like"></i>
+	        			<i class="ub-f1 star-unlike"></i>
+	        			<i class="ub-f1 star-unlike"></i>
+	        			<i class="ub-f1 star-unlike"></i>
+	        			<i class="ub-f1 star-unlike"></i>
+	        			<div></div>
+	        		</div>
+	        		
+	        		<div class="item-content">
+	        			评论呢绒评论呢绒评论呢绒评论呢绒评论呢绒评论呢绒评论呢绒评论呢绒评论呢绒评论呢绒评论呢绒
+	        			评论呢绒评论呢绒评论呢绒评论呢绒评论呢绒评论呢绒评论呢绒评论呢绒评论呢绒评论呢绒评论呢绒
+	        			评论呢绒评论呢绒评论呢绒评论呢绒评论呢绒评论呢绒评论呢绒评论呢绒评论呢绒评论呢绒评论呢绒
+	        		</div>
+	        		
+	        		<div class="item-image">
+	        			<ul>
+	        				<li></li>
+	        				<li></li>
+	        				<li></li>
+	        				<li></li>
+	        			</ul>
+	        		</div>
+	        		
+	        		<div class="item-time">购买时间： <span>2016-09-07</span></div>
+	        	</div>
+	        	
+	        	<div class="evaluate-list-item list-con">
+	        		<div class="item-top ub">
+	        			<div class="item-top-icon ub-f1"></div>
+	        			<div class="item-top-name ub-f1">张三</div>
+	        			<div class="item-top-time ub-f1">2016-09-09</div>
+	        		</div>
+	        		
+	        		<div class="item-star ub">
+	        			<i class="ub-f1 star-like"></i>
+	        			<i class="ub-f1 star-unlike"></i>
+	        			<i class="ub-f1 star-unlike"></i>
+	        			<i class="ub-f1 star-unlike"></i>
+	        			<i class="ub-f1 star-unlike"></i>
+	        			<div></div>
+	        		</div>
+	        		
+	        		<div class="item-content">
+	        			评论呢绒评论呢绒评论呢绒评论呢绒评论呢绒评论呢绒评论呢绒评论呢绒评论呢绒评论呢绒评论呢绒
+	        			评论呢绒评论呢绒评论呢绒评论呢绒评论呢绒评论呢绒评论呢绒评论呢绒评论呢绒评论呢绒评论呢绒
+	        			评论呢绒评论呢绒评论呢绒评论呢绒评论呢绒评论呢绒评论呢绒评论呢绒评论呢绒评论呢绒评论呢绒
+	        		</div>
+	        		
+	        		<div class="item-image">
+	        			<ul>
+	        				<!--<li></li>
+	        				<li></li>
+	        				<li></li>
+	        				<li></li>-->
+	        			</ul>
+	        		</div>
+	        		
+	        		<div class="item-time">购买时间： <span>2016-09-07</span></div>
+	        	</div>
+	        </div>
+	        
+	        
+	        <!--操作-->
+	        <div class="action ub">
+	        	<div class="ub-f1 action-icon">
+	        		<div class="action-ask action-icon-top"></div>
+	        		<div class="action-icon-txt">咨询</div>
+	        	</div>
+	        	<div class="ub-f1 action-icon">
+	        		<div class="action-un-like action-icon-top"></div>
+	        		<div class="action-icon-txt">收藏</div>
+	        	</div>
+	        	<div class="ub-f1 action-icon">
+	        		<div class="action-cart action-icon-top"></div>
+	        		<div class="action-icon-txt">购物车</div>
+	        	</div>
+	        	<div class="ub-f1 action-m-l">
+	        		<div class="ub action-rg">
+	        			<div class="ub-f1 action-add">加入购物车</div>
+	        			<div class="ub-f1 action-buy">立即购买</div>
+	        		</div>
+	        	</div>
+	        </div>
+		<!--</div>-->
+	</body>
+	
+	
+	<!--libs-->
+	<script src="libs/zepto.min.js"></script>
+	<script src="libs/angular.min.js"></script>
+	<script src="libs/fastclick.js"></script>
+	<script src="libs/swiper.min.js"></script>
+	<script src="mnBirdge/mnwebmain.js"></script>
+	
+	<!--common-->
+	<script src="config/mn.config.js"></script>
+	<script src="config/mn.commonArr.js"></script>
+	<script src="common/mn.utility.js"></script>
+	<script src="common/mn.loading.js"></script>
+	<script src="http/mn.http.js"></script>
+	<script src="controller/app.js"></script>
+	
+	<!--controller-->
+	<script src="controller/goods.Detail.Controller.js"></script>
+	
+</html>

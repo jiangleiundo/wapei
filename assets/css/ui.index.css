@@ -1,0 +1,51 @@
+@charset "utf-8";
+
+.banner {
+    background-color: #fff;
+}
+
+.goods-box {
+    background-color: #fff;
+    padding: 0 12px 12px 12px;
+    font-size: 13px;
+}
+
+.new-goods-txt h4 {
+    line-height: 18px;
+    min-height: 18px;
+    max-height: 54px;
+    color: #333;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3; /*超过3行省略*/
+    overflow: hidden;
+}
+
+.goods-item-price {
+    bottom: 0;
+}
+
+.ad-box {
+    background-color: #fff;
+    margin: 12px 0;
+    padding: 12px;
+}
+
+.ad-box img {
+    margin: auto;
+}
+
+.goods-option div {
+    width: 33.33%;
+}
+
+.goods-option div:nth-child(1),
+.goods-option div:nth-child(2) {
+    margin-right: 1px;
+}
+
+
+
+
+
+

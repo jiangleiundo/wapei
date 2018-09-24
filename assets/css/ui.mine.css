@@ -1,0 +1,242 @@
+@charset "utf-8";
+
+/*mine*/
+.my-head {
+	background-color: #f25743;
+}
+
+.my-head-pic {
+	padding-top: 20px;
+	
+}
+
+.my-head-pic i {
+	display: block;
+	width: 100px;
+	height: 100px;
+	margin: auto;
+	border-radius: 50%;
+	border: 2px solid #f58776;
+	background: #efefef;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+.my-head-info {
+	text-align: center;
+	margin-top: 20px;
+	color: #fff;
+}
+
+.my-head-info h3 {
+	font-size: 18px;
+}
+
+.my-jifen {
+	width: 120px;
+	margin: 10px auto 0;
+}
+
+.my-jifen > b.pic {
+	display: inline-block;
+	height: 16px;
+	width: 16px;
+	background: url(../icons/jifen.png) no-repeat;
+	background-size: cover;
+	vertical-align: -3px;
+	margin-right: 3px;
+}
+
+.head-tab {
+	text-align: center;
+	color: #fff;	
+	margin-top: 20px;
+	padding-bottom: 10px;
+}
+
+.head-item {
+	min-height: 60px;
+	font-size: 18px;
+}
+
+.b-r-1 {
+	border-right: 1px solid #c54640;
+}
+
+.head-item > img {
+	display: block;
+	width: 24%;
+	margin: auto;
+}
+
+.my-item {
+	background: #fff;
+	height: 50px;
+	line-height: 50px;
+	padding-left: 12px;
+	margin-bottom: 1px;
+}
+
+.my-order {
+	margin: 3px 0 6px 0;
+}
+
+.my-item-rt {
+	min-width: 24px;
+	max-width: 24px;
+	padding-left: 10px;
+}
+
+.my-item-lt img {
+	width: 20px;
+	margin-right: 8px;
+	vertical-align: -4px;
+}
+
+.my-item-rt img {
+	width: 10px;
+	margin: auto;
+}
+
+
+.my-head-un {
+	background-color: #eee;
+	padding: 50px 0;
+}
+
+.my-head-pic-def img {
+	display: block;
+	border-radius: 50%;
+	background: #efefef;
+	width: 25%;
+	margin: auto;
+}
+
+.my-login {
+	width: 90px;
+	height: 30px;
+	line-height: 30px;
+	margin: 10px auto 0;
+	text-align: center;
+	font-size: 18px;
+}
+
+/* mine.order css */
+.tab{
+    position: relative;
+    height: 50px;
+    background-color: #fff;
+}
+
+.tab-item{
+    max-width: 25%;
+    min-width: 25%;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    color: #333;
+    font-size: 17px;
+}
+
+.tab-line{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width: 25%;
+    background-color: #D51419;
+    -webkit-transition-duration: 0.2s;
+    -webkit-transition-timing-function: linear;
+}
+
+.tab-item.active{
+    color: #D51419 !important;
+}
+
+.my-order-head {
+    padding: 6px 12px 0;
+    background-color: #fff;
+    text-align: right;
+    font-size: 15px;
+}
+
+.goods-item-price {
+    bottom: 0;
+}
+
+.goods-num {
+    bottom: 18px;
+}
+
+.goods-item {
+    margin-bottom: 0;
+}
+
+.my-order-item {
+    background-color: #fff;
+    margin-top: 1px;
+    line-height: 50px;
+    padding: 0 12px;
+    text-align: right;
+}
+
+.my-order-btn-box {
+    padding: 20px 12px 30px;
+    margin-top: 1px;
+    background-color: #fff;
+}
+
+.my-order-btn-item {
+    padding: 12px;
+    margin-top: 1px;
+    background-color: #fff;
+}
+
+.my-order-btn {
+    height: 34px;
+    line-height: 34px;
+    width: 90px;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    font-size: 15px;
+    font-weight: 500;
+    margin-left: 4px;
+}
+
+.my-order-btn-box .active, .my-order-btn-item .active {
+    color: #D51419;
+    border-color: #D51419;
+}
+
+.my-order-wait-list > li {
+    margin-bottom: 8px;
+}
+
+.my-order-wait-list > li:last-child {
+    margin-bottom: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

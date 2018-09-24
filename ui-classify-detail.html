@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1" name="viewport">
+    <meta name="format-detection" content="email=no">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="assets/css/ui.base.css"/>
+    <link rel="stylesheet" href="assets/css/ui.common.css"/>
+    <link rel="stylesheet" href="assets/css/ui.classify.detail.css"/>
+    <title>分类详情</title>
+</head>
+<body ng-controller="ctrl" style="padding-top: 40px">
+    <div class="ub goods-option fix-to-top">
+        <div class="ub-f1" ng-class="item.isActive" ng-click="switchParts($index)" ng-repeat="item in classifyTabArr" on-Finish-Render-Filters><span>{{item.name}}<b></b></span></div>
+    </div>
+
+    <div class="cd-goods-list">
+        <div class="cd-no-data">
+            <span>哎呦，没有找到相关产品</span>
+            <div><a class="cd-link-keFu">联系客服</a></div>
+            <div class="com-line"><b>推荐产品</b></div>
+        </div>
+        <ul>
+            <li class="ub goods-item">
+                <div class="ub-f1 goods-item-img"><i style="background-image: url(assets/images/public/goods01.jpg);"></i></div>
+                <div class="ub-f1 goods-item-txt">
+                    <h4>川崎Z1000摩托车 10-16年 DWV车身 防摔跤 发动机保护球</h4>
+
+                    <div class="goods-item-price">
+                        <div class="new-price"><em class="red-rmb">¥</em><span>739.00</span></div>
+                        <div class="old-price">¥ <span>790</span></div>
+                    </div>
+                </div>
+            </li>
+            <li class="ub goods-item">
+                <div class="ub-f1 goods-item-img"><i style="background-image: url(assets/images/public/goods01.jpg);"></i></div>
+                <div class="ub-f1 goods-item-txt">
+                    <h4>川崎Z1000摩托车 10-16年 DWV车身 防摔跤 发动机保护球</h4>
+
+                    <div class="goods-item-price">
+                        <div class="new-price"><em class="red-rmb">¥</em><span>739.00</span></div>
+                        <div class="old-price">¥ <span>790</span></div>
+                    </div>
+                </div>
+            </li>
+            <li class="ub goods-item">
+                <div class="ub-f1 goods-item-img"><i style="background-image: url(assets/images/public/goods01.jpg);"></i></div>
+                <div class="ub-f1 goods-item-txt">
+                    <h4>川崎Z1000摩托车 10-16年 DWV车身 防摔跤 发动机保护球</h4>
+
+                    <div class="goods-item-price">
+                        <div class="new-price"><em class="red-rmb">¥</em><span>739.00</span></div>
+                        <div class="old-price">¥ <span>790</span></div>
+                    </div>
+                </div>
+            </li>
+            <li class="ub goods-item">
+                <div class="ub-f1 goods-item-img"><i style="background-image: url(assets/images/public/goods01.jpg);"></i></div>
+                <div class="ub-f1 goods-item-txt">
+                    <h4>川崎Z1000摩托车 10-16年 DWV车身 防摔跤 发动机保护球</h4>
+
+                    <div class="goods-item-price">
+                        <div class="new-price"><em class="red-rmb">¥</em><span>739.00</span></div>
+                        <div class="old-price">¥ <span>790</span></div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="cd-container-bg hiddenIm">
+        <div class="cd-container">
+            <div class="">
+                <div class="cd-head"><b></b>热门品牌</div>
+                <div class="cd-hot-brand fix">
+                    <div class="goods-item-s f">
+                        <div><i style="background-image: url(assets/images/test/brandCopy.png)"></i></div>
+                        <p>三一</p>
+                    </div>
+                    <div class="goods-item-s f">
+                        <div><i style="background-image: url(assets/images/test/brandCopy.png)"></i></div>
+                        <p>三一</p>
+                    </div>
+                    <div class="goods-item-s f">
+                        <div><i style="background-image: url(assets/images/test/brandCopy.png)"></i></div>
+                        <p>三一</p>
+                    </div>
+                    <div class="goods-item-s f">
+                        <div><i style="background-image: url(assets/images/test/brandCopy.png)"></i></div>
+                        <p>三一</p>
+                    </div>
+                    <div class="goods-item-s f">
+                        <div><i style="background-image: url(assets/images/test/brandCopy.png)"></i></div>
+                        <p>三一</p>
+                    </div>
+                </div>
+
+                <div class="cd-item"><b></b></div>
+                <div class="com-box">不限品牌</div>
+
+                <div class="repeat-">
+                    <div class="cd-item">A</div>
+                    <ul class="cd-item-box">
+                        <li><i style="background-image: url(assets/images/test/brand_copy.png)"></i><span>小鸟科技</span></li>
+                        <li><i style="background-image: url(assets/images/test/brand_copy.png)"></i><span>小鸟科技</span></li>
+                        <li><i style="background-image: url(assets/images/test/brand_copy.png)"></i><span>小鸟科技</span></li>
+                        <li><i style="background-image: url(assets/images/test/brand_copy.png)"></i><span>小鸟科技</span></li>
+                        <li><i style="background-image: url(assets/images/test/brand_copy.png)"></i><span>小鸟科技</span></li>
+                    </ul>
+                </div>
+                <div class="repeat-">
+                    <div class="cd-item">C</div>
+                    <ul class="cd-item-box">
+                        <li><i style="background-image: url(assets/images/test/brand_copy.png)"></i><span>小鸟科技</span></li>
+                        <li><i style="background-image: url(assets/images/test/brand_copy.png)"></i><span>小鸟科技</span></li>
+                        <li><i style="background-image: url(assets/images/test/brand_copy.png)"></i><span>小鸟科技</span></li>
+                        <li><i style="background-image: url(assets/images/test/brand_copy.png)"></i><span>小鸟科技</span></li>
+                        <li><i style="background-image: url(assets/images/test/brand_copy.png)"></i><span>小鸟科技</span></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="cd-goods">
+                <div class="cd-goods-type fix">
+                    <ul class="cd-goods-lt f">
+                        <li class="">全部分类</li>
+                        <li class="">发动机件</li>
+                        <li class="active">液压件</li>
+                        <li class="">轴承齿轮</li>
+                        <li class="">侧翼</li>
+                        <li class="">侧翼</li>
+                        <li class="">发动机件</li>
+                        <li class="">液压件</li>
+                        <li class="">轴承齿轮</li>
+                        <li class="">侧翼</li>
+                        <li class="">侧翼</li>
+                        <li class="">发动机件</li>
+                        <li class="">液压件</li>
+                        <li class="">轴承齿轮</li>
+                        <li class="">侧翼</li>
+                        <li class="">侧翼</li>
+                    </ul>
+
+                    <ul class="cd-goods-rt r">
+                        <li class="">全部品牌</li>
+                        <li class="active">卡特</li>
+                        <li class="">小松</li>
+                        <li class="">神钢</li>
+                        <li class="">住友</li>
+                        <li class="">日立</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="cd-goods-supply">
+                <div class="cd-list">全部</div>
+                <div class="cd-list">原厂件</div>
+                <div class="cd-list">副厂件</div>
+            </div>
+
+
+            <div class="showIm cd-rank">
+                <div class="cd-list">综合排序</div>
+                <div class="cd-list">销量从高到低</div>
+                <div class="cd-list">价格从高到低</div>
+                <div class="cd-list">价格从低到高</div>
+            </div>
+        </div>
+        <div class="cd-container-mask" ng-click="closeMask()"></div>
+    </div>
+
+</body>
+<!--libs-->
+<script src="libs/zepto.min.js"></script>
+<script src="libs/angular.min.js"></script>
+<script src="libs/fastclick.js"></script>
+<script src="mnBirdge/mnwebmain.js"></script>
+
+<!--common-->
+<script src="config/mn.config.js"></script>
+<script src="config/mn.commonArr.js"></script>
+<script src="common/mn.utility.js"></script>
+<script src="common/mn.loading.js"></script>
+<script src="http/mn.http.js"></script>
+<script src="controller/app.js"></script>
+
+<script src="controller/classify.detail.controller.js"></script>
+</html>

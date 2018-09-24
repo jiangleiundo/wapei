@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="format-detection" content="email=no">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="assets/css/ui.base.css">
+    <link rel="stylesheet" href="assets/css/ui.swiper.css">
+    <link rel="stylesheet" href="assets/css/ui.common.css" />
+    <link rel="stylesheet" href="assets/css/ui.index.css">
+    <title>首页</title>
+</head>
+<body ng-controller="ctrl">
+    <div class="search-box">
+        <div>
+            <b></b>
+            <input type="text" class="form-ctrl" placeholder="请输入产品名称、品牌、机型">
+        </div>
+    </div>
+    <div class="banner">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide" ng-repeat="item in indexModel.bannerArr" on-Finish-Render-Filters>
+                    <img style="width: 100%" ng-src="{{item.image}}" ng-click="bannerLinkTo(item)">
+                </div>
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+
+    <div class="goods-box fix">
+        <div class="goods-item-s f" ng-click="test()">
+            <div><i style="background-image: url(assets/images/public/logo.png)"></i></div>
+            <p>发动机件</p>
+        </div>
+        <div class="goods-item-s f" ng-click="test2()">
+            <div><i style="background-image: url(assets/images/public/logo.png)"></i></div>
+            <p>发动机件2</p>
+        </div>
+    </div>
+
+    <div class="ad-box"><img src="assets/images/public/ad01.jpg"></div>
+
+    <div class="com-line"><b>推荐产品</b></div>
+
+    <ul>
+        <li class="ub goods-item">
+            <div class="ub-f1 goods-item-img"><i style="background-image: url(assets/images/public/goods01.jpg);"></i></div>
+            <div class="ub-f1 goods-item-txt">
+                <h4>川崎Z1000摩托车 10-16年 DWV车身 防摔跤 发动机保护球</h4>
+
+                <div class="goods-item-price">
+                    <div class="new-price"><em class="red-rmb">¥</em><span>739.00</span></div>
+                    <div class="old-price">¥ <span>790</span></div>
+                </div>
+            </div>
+        </li>
+
+    </ul>
+
+    <div class="com-line"><b>每日必看</b></div>
+    <div class="img-con fix">
+        <div class="f"><img src="assets/images/public/wait01.jpg"></div>
+        <div class="f"><img src="assets/images/public/wait01.jpg"></div>
+        <div class="f"><img src="assets/images/public/wait01.jpg"></div>
+        <div class="f"><img src="assets/images/public/wait01.jpg"></div>
+    </div>
+
+    <div class="com-line"><b>最新产品</b></div>
+    <div class="ub goods-option">
+        <div class="ub-f1" ng-class="item.isActive" ng-click="switchParts($index)" ng-repeat="item in indexGoodsSelArr"><span>{{item.name}}<b></b></span></div>
+    </div>
+    <div class="img-con new-goods fix">
+        <div class="f">
+            <div class="new-goods-item">
+                <img src="assets/images/public/goods_01.jpg">
+                <div class="new-goods-txt">
+                    <h4>川崎Z1000摩托车 10-16年 DWV车身 防摔跤</h4>
+                    <div>
+                        <span class="new-price"><em class="red-rmb">¥</em><span>35.00</span></span>
+                        <span class="old-price">¥ <span>40.00</span></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="f">
+            <div class="new-goods-item">
+                <img src="assets/images/public/goods_01.jpg">
+                <div class="new-goods-txt">
+                    <h4>川崎Z1000摩托车 10-16年 DWV车身 防摔跤</h4>
+                    <div>
+                        <span class="new-price"><em class="red-rmb">¥</em><span>35.00</span></span>
+                        <span class="old-price">¥ <span>40.00</span></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<!--libs-->
+<script src="libs/zepto.min.js"></script>
+<script src="libs/angular.min.js"></script>
+<script src="libs/fastclick.js"></script>
+<script src="libs/swiper.min.js"></script>
+<script src="mnBirdge/mnwebmain.js"></script>
+
+<!--common-->
+<script src="config/mn.config.js"></script>
+<script src="config/mn.commonArr.js"></script>
+<script src="common/mn.utility.js"></script>
+<script src="common/mn.loading.js"></script>
+<script src="http/mn.http.js"></script>
+<script src="controller/app.js"></script>
+
+<script src="controller/index.Controller.js"></script>
+</html>
