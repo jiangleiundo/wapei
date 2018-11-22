@@ -49,20 +49,28 @@ var utility = {
 
 	/**
 	 * 解析URL传参
-	 * @param {Object} name
+	 * @param {Object} key
 	 */
-	getQueryString : function(name)
+	getQueryString : function(key)
 	{
-	    var reg = new RegExp("(^|&)"+ name +"=([^&]*)(&|$)");
-	    var r = window.location.search.substr(1).match(reg);
-	    if(r != null)
-	    {
-	     	return  unescape(r[2]);
-	    }
-	    else
-	    {
-	     	return null;
-	    }
+	    var after = window.location.search;
+		if(after.indexOf(key) == -1) return null; //如果url中没有"key"直接返回空
+
+		//先通过search取值如果取不到就通过hash来取
+		after = after.substr(1) || window.location.hash.split("?")[1];
+		if(after)
+		{
+			var reg = new RegExp("(^|&)"+ key +"=([^&]*)(&|$)");
+			var r = after.match(reg);
+			if(r != null)
+			{
+				return  decodeURIComponent(r[2]);
+			}
+			else
+			{
+				return null;
+			}
+		}
 	},
 
 	/**
