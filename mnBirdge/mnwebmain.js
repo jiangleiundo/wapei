@@ -329,7 +329,7 @@ function initMN(cbBridgeInited){
     	
     }
 	
-	//判断是PC还是移动端方法       ----新建 By   谢中龙    2016-03-23
+	//判断是PC还是移动端方法
 	function IsPC()
     {
 
